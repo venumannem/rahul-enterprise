@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-width: thin;
+}
+
+td {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<center><h1>Pre-Operation Checksheet</h1></center>
+
+<table border="1" cellspacing:"0" cellpadding:"4">
+  <tr>
+    <td colspan="2"><font color=red><label><h3>Supervisior Name:&nbsp;&nbsp;</h3></label></font>
+        <label>
+            <select name="supervisior" required>
+                <option value="none">--Supervisior----</option>
+                <option value="R.Dinesh">R.Dinesh</option>
+                <option value="G.S.Suresh">G.S.Suresh</option>
+                <option value="M.S.Periyanagam">M.S.Periyanagam</option>
+                <option value="S.Elangamani">S.Elangamani</option>
+            </select>
+        </label><br><br>
+    </th>
+    <td colspan="2"><font color=red><h3><b>CELL: 12 LPM CELL 2 TURNING<b> </h3></th>
+    <th><font color=red><label><h3><b>MACHINE : ACE 4</b><h3></label></font></th>
+    <th><font color=red><h3>DATE</h3></font></th>
+    <th><font color=red><h3><label>Shift:&nbsp;&nbsp;</label></h3></font>
+        <label>
+            <select name="shift" required>
+                <option value="none">--Shift----</option>
+                <option value="Shift1">Shift1</option>
+                <option value="Shift2">Shift2</option>
+                <option value="Shift3">Shift3</option>                                                                        
+            </select>
+        </label><br><br>
+    </th>
+    
+    
+  </tr>
+  <tr>
+    <th><font color=red><h3>SI.NO.</h3></th>
+    <th><font color=red><h3><b>Location<b> </h3></th>
+    <th><font color=red><h3><b>Check Point</b></h3></th>
+    <th><font color=red><h3><b>  Requirement  <b> </h3></th>
+    <th><font color=red><h3><b>Checking Method<b> </h3></th>
+    <th><font color=red><h3><b>Condition<b> </h3></th>
+    <td><font color=red><h3><b>Remarks<b> </h3></td>
+  </tr>
+  <tr>
+    <th> <h3><b>1<b> </h3></th>
+    <th><h3><b>Monitor<b> </h3></th>
+    <th><h3><b>Program No<b> </h3></th>
+    <th><h3><b> Machine Screen <b> </h3></th>
+    <th><h3><b>Display<b> </h3></th>
+    <th>
+    <input type="radio" name="Program_no" value="ok" required /> OK
+    <input type="radio" name="Program_no" value="not ok" /> Not OK
+    </th>
+    
+    <td>
+    <input type="text" placeholder="Remarks"  name="pn_remark" class="txtb" >
+    </td>
+  </tr>
+
+  <tr>
+    <th> <h3><b>2<b></h3></th>
+    <th><h3><b>Machine Front Side<b> </h3></th>
+    <th><h3><b>System Pressure<b> </h3></th>
+    <th><h3><b> Spec: 30-35 Bar <b> </h3></th>
+    <th><h3><b>Visual<b> </h3></th>
+    <th><input type="text" placeholder="Data to be typed (Unit in Bar)"  name="System_Pressure" class="txtb" required ></th>
+    <td>
+        <input type="text" placeholder="Remarks"  name="sp_remark" class="txtb" >
+    </td>
+  </tr>
+
+  <tr>
+    <th> <h3><b>3<b> </h3></th>
+    <th><h3><b>Machine Front Side<b> </h3></th>
+    <th><h3><b>Chuck Pressure<b> </h3></th>
+    <th><h3><b> Spec: 30-35 Bar<b> </h3></th>
+    <th><h3><b>Visual<b> </h3></th>
+    <th><input type="text" placeholder="Data to be typed (Unit in Bar)"  name="Chunk_Pressure" class="txtb" required ></th>
+    <td>
+    <input type="text" placeholder="Remark"  name="cp_remark" class="txtb" >
+    </td>
+  </tr> 
+
+  <tr>
+    <th> <h3><b>4<b> </h3></th>
+    <th><h3><b>Lub Oil System<b> </h3></th>
+    <th><h3><b>Lub Oil Pressure<b> </h3></th>
+    <th><h3><b> Spec: 15-18 Bar<b> </h3></th>
+    <th><h3><b>Visual<b> </h3></th>
+    <th>
+        <input type="text" placeholder="Data to be typed (Unit in Bar)"  name="Lub_Oil_Pressure" class="txtb" required >
+    </th>
+    <td>
+    <input type="text" placeholder="Remark"  name="lp_remark" class="txtb" >
+    </td>
+  </tr>
+
+  <tr>
+    <th> <h3><b>5<b> </h3></th>
+    <th><h3><b>Lub Oil System<b> </h3></th>
+    <th><h3><b>Oil Level<b> </h3></th>
+    <th><h3><b> Between Min-Max Level<b> </h3></th>
+    <th><h3><b>Visual<b> </h3></th>
+    <th>
+        <input type="radio" name="Oil_Level" value="ok" required /> OK
+        <input type="radio" name="Oil_Level" value="not ok" /> Not OK
+    </th>
+    <td>
+    <input type="text" placeholder="Remark"  name="op_remark" class="txtb" >
+    </td>
+  </tr>
+
+  <tr>
+    <th> <h3><b>6<b> </h3></th>
+    <th><h3><b>Panel A/C<b> </h3></th>
+    <th><b>Temperature<b> </h3></th>
+    <th><b> Spec: 25-35 <b> </h3></th>
+    <th><h3><b>Visual<b> </h3></th>
+    <th>
+        <input type="text" placeholder="Data to be typed (Unit in Bar)"  name="Panel_Temperature" class="txtb" required >
+    </th>
+    <td>
+    <input type="text" placeholder="Remark"  name="pt_remark" class="txtb" >
+    </td>
+  </tr>
+
+  <tr>
+    <th> <h3><b>7<b> </h3></th>
+    <th><h3><b>Hydraulic System<b> </h3></th>
+    <th><h3><b>Oil Level<b> </h3></th>
+   <th><h3><b> Between Min-Max Level<b> </h3></th>
+    <th><h3><b>Visual<b> </h3></th>
+    <th>	
+        <input type="radio" name="Hydraulic_oil_level" value="ok" required /> OK
+        <input type="radio" name="Hydraulic_oil_level" value="not ok" /> Not OK
+    </th>
+    <td>
+        <input type="text" placeholder="Remark"  name="hop_remark" class="txtb" >
+    </td>
+  </tr>
+
+  
+
+  
+
+</table>
+<h3 style="margin-left: 5px; color: aquamarine;"><b><input type="submit"></input></b></h3>
+
+</body>
+</html>
+
+
